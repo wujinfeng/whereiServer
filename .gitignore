@@ -1,0 +1,9 @@
+.cache
+.idea
+.DS_Store
+# For testing
+test/
+node_modules/
+logs/
+npm-debug.log
+public/upload
