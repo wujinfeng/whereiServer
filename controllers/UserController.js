@@ -17,7 +17,7 @@ class UserController extends BaseController {
     }
 
     login(req, res) {
-        console.log('login:',req.body)
+        console.log('login:',req.body);
         let self = this;
         let code = req.body.code;
         console.log('code:',code);
@@ -35,7 +35,7 @@ class UserController extends BaseController {
 
     add(req, res) {
         let self = this;
-        console.log('add:',req.body)
+        console.log('add:',req.body);
         let openId = req.body.openId;
         let nickName = req.body.nickName;
         console.log('openId:',openId);
@@ -54,7 +54,7 @@ class UserController extends BaseController {
 
     share(req, res) {
         let self = this;
-        console.log('share:',req.body)
+        console.log('share:',req.body);
         let openId = req.body.openId;
         console.log('openId:',openId);
         if (!openId) {
@@ -72,7 +72,7 @@ class UserController extends BaseController {
 
     location(req, res) {
         let self = this;
-        console.log('location:',req.body)
+        console.log('location:',req.body);
         let fromOpenId = req.body.fromOpenId;
         let nickName = req.body.nickName;
         let openId = req.body.openId;
