@@ -57,7 +57,12 @@ class UserModel extends BaseModel {
         let execParam = self.getExecParamByOption(sql, params);
         self.execSql(execParam, cb);
     }
-
+    getShare(params, cb){
+        let self = this;
+        let sql = `select nickName,coordinate,DATE_FORMAT(ctime, '%m-%d %H:%i') AS time from ${self.baseDb}location where fromOpenId=? order by ctime desc limit 20`;
+        let execParam = self.getExecParamByOption(sql, params.openId);
+        self.execSql(execParam, cb);
+    }
 }
 
 module.exports = UserModel;

@@ -8,7 +8,7 @@ router.post('/login', function (req, res, next) {
     new UserController(req).login(req, res, next);
 });
 
-// 转发
+// 添加
 router.post('/add', function (req, res, next) {
     new UserController(req).add(req, res, next);
 });
@@ -23,6 +23,12 @@ router.post('/share', function (req, res, next) {
 router.post('/location', function (req, res, next) {
     new UserController(req).location(req, res, next);
 });
+
+// 获取分享信息
+router.post('/getShare', function (req, res, next) {
+    new UserController(req).getShare(req, res, next);
+});
+
 
 
 
