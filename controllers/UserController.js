@@ -37,7 +37,7 @@ class UserController extends BaseController {
         let self = this;
         console.log('add:', req.body);
         let openId = req.body.openId;
-        let nickName = req.body.nickName;
+        let nickName = req.body.nickName || '';
         console.log('openId:', openId);
         if (!openId) {
             return res.json({code: 400, msg: 'openId not found'});
@@ -74,7 +74,7 @@ class UserController extends BaseController {
         let self = this;
         console.log('location:', req.body);
         let fromOpenId = req.body.fromOpenId;
-        let nickName = req.body.nickName;
+        let nickName = req.body.nickName || '';
         let openId = req.body.openId;
         let coordinate = req.body.coordinate;
         if (!fromOpenId || !openId ) {

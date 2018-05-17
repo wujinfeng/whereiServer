@@ -23,7 +23,7 @@ module.exports = {
         fileLimit: '10 * 1024 * 1024',  //10MB
         fileMaxCount: 10
     },
-    APPID: 'wx15473fd1685acbee',
-    SECRET: '8675853869249cae26ddd0863c91375b',
+    APPID: 'wx15473fd1685acbeek',
+    SECRET: '8675853869249cae26ddd0863c91375bk',
     logger: require('../configLog').logger
 };
